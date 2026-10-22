@@ -18,11 +18,11 @@ const Login = () => {
     }
     return (
         <main className="grow flex items-center justify-center px-4 login" >
-            <div className="bg-black p-8 sm:p-10 rounded-[20px] w-full max-w-md shadow-2xl border-2 border-[#006eff]">
+            <div className="bg-black p-8 sm:p-10 rounded-[20px] w-full max-w-md shadow-2xl border-2 border-red-600">
 
                 {/* Título com o mesmo estilo neon do site */}
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-[#006eff] text-center mb-8 uppercase tracking-wider">
-                    Login Gamer
+                <h2 className="text-2xl sm:text-3xl font-extrabold text-red-600 text-center mb-8 uppercase tracking-wider">
+                    Login FUT
                 </h2>
 
                 <form onSubmit={Login} className="flex flex-col gap-5">
@@ -34,7 +34,7 @@ const Login = () => {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             placeholder="seu@email.com"
-                            className="w-full p-3.5 rounded-xl bg-[#1a1a1a] text-white border border-gray-700 focus:border-[#006eff] focus:ring-1 focus:ring-[#006eff] outline-none transition-all placeholder:text-gray-500"
+                            className="w-full p-3.5 rounded-xl bg-[#1a1a1a] text-white border border-gray-700 focus:border-red-600 focus:ring-1 focus:ring-red-600 outline-none transition-all placeholder:text-gray-500"
                         />
                     </div>
 
@@ -46,21 +46,21 @@ const Login = () => {
                             value={senha}
                             onChange={(e) => setSenha(e.target.value)}
                             placeholder="••••••••"
-                            className="w-full p-3.5 rounded-xl bg-[#1a1a1a] text-white border border-gray-700 focus:border-[#006eff] focus:ring-1 focus:ring-[#006eff] outline-none transition-all placeholder:text-gray-500"
+                            className="w-full p-3.5 rounded-xl bg-[#1a1a1a] text-white border border-gray-700 focus:border-red-400 focus:ring-1 focus:ring-red-600 outline-none transition-all placeholder:text-gray-500"
                         />
                     </div>
 
                     {/* Botão com o mesmo gradiente e efeito dos cards */}
                     <button
                         type="submit"
-                        className="border-4 border-[#7eb6ff] mt-2 bg-linear-r from-cyan-400 to-purple-600 w-full py-3.5 rounded-[20px] text-[#6aaaff] font-bold text-lg transition-all duration-300 hover:opacity-90 hover:scale-105 hover:text-white cursor-pointer shadow-lg"
+                        className="border-4 border-red-600 mt-2 bg-linear-r from-red-600 to-purple-600 w-full py-3.5 rounded-[20px] text-red-400 font-bold text-lg transition-all duration-300 hover:opacity-90 hover:scale-105 hover:text-white cursor-pointer shadow-lg"
                     >
                         Entrar
                     </button>
                 </form>
 
                 <p className="text-center text-gray-400 mt-6 text-sm">
-                    Ainda não tem conta? <Link to="/contato" className="text-[#006eff] hover:underline font-medium">Fale conosco</Link>
+                    Ainda não tem conta? <Link to="/contato" className="text-red-600 hover:underline font-medium">Fale conosco</Link>
                 </p>
             </div>
         </main>

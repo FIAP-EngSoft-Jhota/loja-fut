@@ -1,9 +1,10 @@
 import {BrowserRouter as Router,Routes,Route}from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import VenCard from './components/VenCard'
 import Home from './pages/Home'
 import Contato from './pages/Contato'
-import Jogos from './pages/Jogos'
+import Historia from './pages/Historia'
 import Login from './pages/Login'
 import Error from './pages/Error'
 
@@ -15,7 +16,7 @@ const App = () => {
         <Header/>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/jogos" element={<Jogos/>}/>
+          <Route path="/historia" element={<Historia/>}/>
           <Route path="/contato" element={<Contato/>}/>
           <Route path="/login" element={<Login />}/>
           <Route path="*" element={<Error />} />

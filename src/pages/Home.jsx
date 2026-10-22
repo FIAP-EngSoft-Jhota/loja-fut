@@ -1,4 +1,4 @@
-import VenCard from '../components/GameCard'
+import VenCard from '../components/VenCard'
 import jogoImg1 from '../assets/imagem01.png'
 import jogoImg2 from '../assets/imagem02.png'
 import jogoImg3 from '../assets/imagem03.png'
