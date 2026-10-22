@@ -1,9 +1,8 @@
-import React from 'react'
-
+import Historia from './pages/Historia';
 const App = () => {
   return (
     <div>
-      
+      <Historia />
     </div>
   )
 }
